@@ -12,6 +12,8 @@
 		D8FD9E17236DC814002E6C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FD9E15236DC814002E6C39 /* Main.storyboard */; };
 		D8FD9E19236DC815002E6C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FD9E18236DC815002E6C39 /* Assets.xcassets */; };
 		D8FD9E1C236DC815002E6C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FD9E1A236DC815002E6C39 /* LaunchScreen.storyboard */; };
+		D8FD9E25236DC92F002E6C39 /* FonebayCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD9E24236DC92F002E6C39 /* FonebayCityViewController.swift */; };
+		D8FD9E28236DC983002E6C39 /* FonebayDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD9E27236DC983002E6C39 /* FonebayDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D8FD9E18236DC815002E6C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8FD9E1B236DC815002E6C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8FD9E1D236DC815002E6C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8FD9E24236DC92F002E6C39 /* FonebayCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FonebayCityViewController.swift; sourceTree = "<group>"; };
+		D8FD9E27236DC983002E6C39 /* FonebayDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FonebayDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		D8FD9E10236DC814002E6C39 /* Everest Wather */ = {
 			isa = PBXGroup;
 			children = (
-				D8FD9E11236DC814002E6C39 /* AppDelegate.swift */,
-				D8FD9E13236DC814002E6C39 /* ViewController.swift */,
-				D8FD9E15236DC814002E6C39 /* Main.storyboard */,
+				D8FD9E23236DC88E002E6C39 /* Controller */,
+				D8FD9E26236DC953002E6C39 /* Model */,
+				D8FD9E29236DC9A9002E6C39 /* View */,
 				D8FD9E18236DC815002E6C39 /* Assets.xcassets */,
 				D8FD9E1A236DC815002E6C39 /* LaunchScreen.storyboard */,
 				D8FD9E1D236DC815002E6C39 /* Info.plist */,
 			);
 			path = "Everest Wather";
+			sourceTree = "<group>";
+		};
+		D8FD9E23236DC88E002E6C39 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD9E11236DC814002E6C39 /* AppDelegate.swift */,
+				D8FD9E13236DC814002E6C39 /* ViewController.swift */,
+				D8FD9E24236DC92F002E6C39 /* FonebayCityViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D8FD9E26236DC953002E6C39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD9E27236DC983002E6C39 /* FonebayDataModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D8FD9E29236DC9A9002E6C39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD9E15236DC814002E6C39 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8FD9E28236DC983002E6C39 /* FonebayDataModel.swift in Sources */,
 				D8FD9E14236DC814002E6C39 /* ViewController.swift in Sources */,
 				D8FD9E12236DC814002E6C39 /* AppDelegate.swift in Sources */,
+				D8FD9E25236DC92F002E6C39 /* FonebayCityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +320,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fonebayinc.everestweather.Everest-Wather";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fonebayinc.everestweather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,7 +337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fonebayinc.everestweather.Everest-Wather";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fonebayinc.everestweather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
